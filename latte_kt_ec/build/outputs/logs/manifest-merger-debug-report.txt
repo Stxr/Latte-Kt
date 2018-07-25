@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+	package
+		ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:2:5-38
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:1-2:41
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		ADDED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml
+		INJECTED from /Users/xrtang/Documents/AndroidProjects/latte_kt_ec/src/main/AndroidManifest.xml

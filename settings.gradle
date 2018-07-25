@@ -1,0 +1,1 @@
+include ':example', ':latte_kt_core', ':latte_kt_compile', ':latte_kt_ec', ':latte_kt_annotations'
