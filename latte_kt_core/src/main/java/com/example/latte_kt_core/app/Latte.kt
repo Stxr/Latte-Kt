@@ -7,8 +7,18 @@ import android.content.Context
  *@author txr
  */
 
-object  Latte{
-    fun init(context :Context){
+object Latte {
+    fun init(context: Context): Configurator {
+         Configurator.LATTE_CONFIGS[ConfigType.APPLICATION_CONTEXT] = context.applicationContext
+         return Configurator
+     }
+    fun getApplicationContext():Context{
+        return getConfiguration(ConfigType.APPLICATION_CONTEXT)
+    }
 
+    fun getConfigurator(): Configurator = Configurator
+
+    fun <T> getConfiguration(key: Any): T {
+       return getConfigurator().getConfiguration(key)
     }
 }
