@@ -10,7 +10,7 @@ import com.joanzapata.iconify.fonts.FontAwesomeModule
  *@author txr
  */
 
-class ExampleApp : Application(){
+class ExampleApp : Application() {
     override fun onCreate() {
         super.onCreate()
 //        Latte.init(this)
@@ -21,3 +21,4 @@ class ExampleApp : Application(){
             ICONS = arrayListOf(FontAwesomeModule())
         }.configure()
     }
+}
