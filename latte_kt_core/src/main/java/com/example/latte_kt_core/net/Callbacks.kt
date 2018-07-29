@@ -27,26 +27,26 @@ interface IRequest {
 }
 
 class RestClientCallback(
-        private val success: ISuccess,
-        private val error: IError,
+        private val success: (String)->Unit,
+        private val error: (Int,String)->Unit,
         private val request: IRequest?,
-        private val failure: IFailure
+        private val failure: ()->Unit
 ) : Callback<String> {
-
     override fun onResponse(call: Call<String>?, response: Response<String>?) {
         response!!.isSuccessful.isTrue {
             if(call!!.isExecuted){
-                success.success(response.body()!!)
+                success(response.body()!!)
             }else{
-                error.error(response.code(), response.message())
+                error(response.code(), response.message())
             }
         }
         request?.onRequestEnd()
     }
 
     override fun onFailure(call: Call<String>?, t: Throwable?) {
-        failure.failure()
+        failure()
         request?.onRequestEnd()
     }
 
 }
+
