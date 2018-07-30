@@ -24,16 +24,6 @@ class ExampleDelegate : LatteDelegate() {
         success = { msg -> msg.toast() }
         failure = { "failure".toast() }
         error = { code: Int, msg: String -> "error code:+$code  msg:$msg".toast() }
-        request = object :IRequest{
-            override fun onRequestStart() {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-
-            override fun onRequestEnd() {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-
-        }
     }.get()
 
 }
