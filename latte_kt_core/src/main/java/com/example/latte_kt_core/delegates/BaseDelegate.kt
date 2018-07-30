@@ -23,7 +23,13 @@ abstract class BaseDelegate : SwipeBackFragment() {
             is View -> setLayout() as View
             else -> throw ClassCastException("type of setLayout() must be int or view")
         }
-        onBindView(rootView, savedInstanceState)
         return rootView
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        //不能写在onCreateView中，结合kotlin-android-extends 插件会出错
+        //出错原因为getView()在onCreateView中可能返回null，导致找不到控件
+        onBindView(view, savedInstanceState)
     }
 }

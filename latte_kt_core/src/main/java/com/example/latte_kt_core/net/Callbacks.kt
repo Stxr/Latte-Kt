@@ -26,7 +26,7 @@ interface IRequest {
     fun onRequestEnd()
 }
 
-class RestClientCallback(
+class RestClientCallback       (
         private val success: (String)->Unit,
         private val error: (Int,String)->Unit,
         private val request: IRequest?,
@@ -49,4 +49,3 @@ class RestClientCallback(
     }
 
 }
-
