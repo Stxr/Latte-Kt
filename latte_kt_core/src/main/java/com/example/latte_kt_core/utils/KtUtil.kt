@@ -20,6 +20,6 @@ public inline fun Boolean.isFalse(block: () -> Unit):Boolean{
     return this
 }
 
-public fun <T> T?.toast(){
-    Toast.makeText(Latte.getApplicationContext(),this.toString(),Toast.LENGTH_SHORT).show()
+public fun <T> T?.toast(duration:Int = Toast.LENGTH_SHORT){
+    Toast.makeText(Latte.getApplicationContext(),this.toString(),duration).show()
 }

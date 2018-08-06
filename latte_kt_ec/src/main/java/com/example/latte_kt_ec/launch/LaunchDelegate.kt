@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.View
 import com.example.latte_kt_core.delegates.BaseDelegate
 import com.example.latte_kt_core.delegates.LatteDelegate
+import com.example.latte_kt_core.utils.isFalse
+import com.example.latte_kt_core.utils.isTrue
 import com.example.latte_kt_core.utils.toast
 import com.example.latte_kt_ec.R
 import kotlinx.android.synthetic.main.delegate_launcher.*
@@ -11,6 +13,7 @@ import kotlinx.android.synthetic.main.delegate_launcher.*
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.delay
 import kotlinx.coroutines.experimental.launch
+import me.yokeyword.fragmentation.ISupportFragment
 
 /**
  *created on 2018/7/30
@@ -23,7 +26,9 @@ class LaunchDelegate : LatteDelegate() {
 
     override fun onBindView(rootView: View, savedInstanceState: Bundle?) {
         timeDown {
-            "倒计时结束".toast()
+            isFirstLaunch.isTrue {
+                startWithPop(LaunchScrollerDelegate())
+            }
         }
 
     }
@@ -31,7 +36,7 @@ class LaunchDelegate : LatteDelegate() {
     /**
      * 倒计时
      */
-    private fun timeDown(callback:()->Unit){
+    private fun timeDown(callback: () -> Unit) {
         val job = launch(UI) {
             for (i in 5 downTo 0) {
                 tv_launcher_timer.text = "$i\n跳过"
